@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ExercThree
+﻿namespace ExercThree
 {
     class Program
     {
