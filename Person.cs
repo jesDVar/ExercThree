@@ -13,7 +13,7 @@ namespace ExercThree
 
 
         // Declaring rules for properties
-        // where it's necessary.
+        // where it's necessary.        
         public int Age
         {
             get { return age; }
