@@ -6,7 +6,8 @@ namespace ExercThree
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            Console.WriteLine("hej");
+            Person emp = new Person();
         }
     }
 
