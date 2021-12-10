@@ -1,4 +1,6 @@
-﻿namespace ExercThree
+﻿using System;
+
+namespace ExercThree
 {
     class Person
     {
@@ -9,10 +11,18 @@
         private string fName;
         private string lName;
 
+        
+        // Declaring rules for properties
+        // where it's necessary.
         public int Age
         {
             get { return age; }
-            set { age = value; }
+            set {
+                if ( age < 0)
+                {
+                    throw new ArgumentException(nameof(age));
+                }
+                age = value; }
         }
 
         public int Height
@@ -25,6 +35,8 @@
             get { return weight; }
             set { weight = value; }
         }
+
+        // This property
         public string FName
         {
             get { return fName; }
