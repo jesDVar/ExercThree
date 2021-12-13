@@ -19,8 +19,9 @@ namespace ExercThree
             get { return age; }
             set
             {
-                if (age < 0)
+                if (value < 0)
                 {
+                    Console.WriteLine("Wrong input");
                     throw new ArgumentException(nameof(age));
                 }
                 else
@@ -41,17 +42,35 @@ namespace ExercThree
             set { weight = value; }
         }
 
-        // This property
         public string FName
         {
             get { return fName; }
-            set { fName = value; }
+            set
+            {
+                if (value.Length <= 10 && value.Length >= 2)
+                {
+                    fName = value;
+                }
+                else
+                {
+                    throw new ArgumentException(nameof(fName));
+                }
+            }
         }
         public string LName
         {
             get { return lName; }
-            set { lName = value; }
+            set
+            {
+                if (value.Length <= 15 && value.Length >= 3)
+                {
+                    lName = value;
+                }
+                else
+                {
+                    throw new ArgumentException(nameof(lName));
+                }
+            }
         }
-
     }
 }
