@@ -9,9 +9,7 @@ namespace ExercThree
             //Let's create a new object!
             Person emp = new Person();
 
-            // Throw an exception if error caught with
-            // try-catch method.
-
+            // Use Try-Catch block.
             try
             {
                 //emp.Age = -2;

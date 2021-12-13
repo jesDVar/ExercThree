@@ -4,13 +4,11 @@ namespace ExercThree
 {
     class Person
     {
-
         private int age;
         private int height;
         private int weight;
         private string fName;
         private string lName;
-
 
         // Declaring rules for properties
         // where it's necessary.        
@@ -30,7 +28,6 @@ namespace ExercThree
                 }
             }
         }
-
         public int Height
         {
             get { return height; }
@@ -41,7 +38,6 @@ namespace ExercThree
             get { return weight; }
             set { weight = value; }
         }
-
         public string FName
         {
             get { return fName; }
