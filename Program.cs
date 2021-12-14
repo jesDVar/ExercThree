@@ -7,7 +7,8 @@ namespace ExercThree
         static void Main(string[] args)
         {
             //Let's create a new object!
-            Person emp = new Person();
+            Person emp = new Person("Jesse", "Varis");
+            
 
             // Use Try-Catch block.
             try
@@ -25,8 +26,6 @@ namespace ExercThree
             //int age = emp.Age;
             //Console.WriteLine(emp.Age);
             //Console.WriteLine(emp.FName);
-
         }
     }
-
 }

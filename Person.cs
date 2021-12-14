@@ -19,8 +19,7 @@ namespace ExercThree
             {
                 if (value < 0)
                 {
-                    Console.WriteLine("Wrong input");
-                    throw new ArgumentException(nameof(age));
+                    throw new ArgumentException("Need to use a positive number");
                 }
                 else
                 {
@@ -67,6 +66,16 @@ namespace ExercThree
                     throw new ArgumentException(nameof(lName));
                 }
             }
+        }
+        public Person(string fName, string lName)
+        {
+            FName = fName;
+            LName = lName;
+        }
+
+        public void PrintPersonInfo()
+        {
+            Console.WriteLine($"Name: {FName} {LName}, Age: {Age}.");
         }
     }
 }
