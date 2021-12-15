@@ -8,14 +8,14 @@ namespace ExercThree
         static void Main(string[] args)
         {
             //Let's create a new object!
-            Person pers = new Person("Jesse", "V.");
+            //Person pers = new Person("Jesse", "Varis.");
 
 
             // Use Try-Catch block.
             try
             {
                 //emp.Age = -2;
-                pers.FName = "jesse varis";
+                //pers.FName = "jesse varis";
             }
             catch (ArgumentException e)
             {

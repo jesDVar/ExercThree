@@ -48,7 +48,7 @@ namespace ExercThree
                 }
                 else
                 {
-                    throw new ArgumentException(nameof(fName));
+                    throw new ArgumentException("First name must contain between 2 to 10 characters");
                 }
             }
         }
@@ -63,7 +63,7 @@ namespace ExercThree
                 }
                 else
                 {
-                    throw new ArgumentException(nameof(lName));
+                    throw new ArgumentException("Last name must contain between 3 to 15 characters");
                 }
             }
         }

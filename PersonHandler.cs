@@ -15,7 +15,7 @@ namespace ExercThree
         {
             pers.Age = age;
         }
-        public Person CreatePerson(int age, string fname, string lname, double height, double weight)
+        public Person CreatePerson(string fname, string lname, int age)
         {
             var person = new Person(fname, lname);
             SetAge(person, age);
@@ -25,8 +25,13 @@ namespace ExercThree
 
         public void PrintAllPersons()
         {
-            foreach (var person in persons) ;
+            foreach (var person in persons)
             person.PrintPersonInfo();
+        }
+        public void SeedPeople()
+        {
+            CreatePerson("Jesse", "Varis", 39);
+            CreatePerson("Jacqueline", "Andersson", 29);
         }
     }
 
