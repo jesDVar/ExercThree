@@ -3,12 +3,13 @@
 namespace ExercThree
 {
     class Program
+
     {
         static void Main(string[] args)
         {
             //Let's create a new object!
             Person emp = new Person("Jesse", "Varis");
-            
+
 
             // Use Try-Catch block.
             try

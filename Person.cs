@@ -2,7 +2,7 @@
 
 namespace ExercThree
 {
-    class Person
+    public class Person
     {
         private int age;
         private int height;
