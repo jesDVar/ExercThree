@@ -11,6 +11,7 @@ namespace ExercThree
         {
             persons = new List<Person>();
         }
+
         public void SetAge(Person pers, int age)
         {
             pers.Age = age;
@@ -26,14 +27,14 @@ namespace ExercThree
         public void PrintAllPersons()
         {
             foreach (var person in persons)
-            person.PrintPersonInfo();
+                person.PrintPersonInfo();
         }
         public void SeedPeople()
         {
             CreatePerson("Jesse", "Varis", 39);
             CreatePerson("Jacqueline", "Andersson", 29);
+            CreatePerson("Pelle", "Hansson", 79);
         }
     }
-
 }
 
